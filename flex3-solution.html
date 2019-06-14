@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <style>
+    body {
+      border: 1px dashed lightcoral;
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+    }
+
+    body * {
+      border: 1px dashed lightblue;
+    }
+
+    div.container {
+      display: flex;
+      flex-grow: 1;
+    }
+
+    header {
+      display: flex;
+      flex-grow: 1;
+      justify-content: center;
+      align-items: center;
+      background-color: lightgreen;
+    }
+
+    aside {
+      display: flex;
+      background-color: lightblue;
+      justify-content: center;
+      align-items: center;
+      flex-grow: 1;
+    }
+
+    main {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: lightcoral;
+      flex-grow: 1;
+    }
+  </style>
+
+  <head>
+    <meta charset="utf-8" />
+    <title>Layout One</title>
+  </head>
+
+  <body>
+    <header>
+      <h2>A</h2>
+    </header>
+    <div class="container">
+      <aside>
+        <h2>B</h2>
+      </aside>
+      <main>
+        <h2>C</h2>
+      </main>
+    </div>
+  </body>
+</html>

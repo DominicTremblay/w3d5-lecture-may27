@@ -1,0 +1,57 @@
+.row {
+  display: flex;
+  flex-flow: row wrap;
+  border: 1px dashed red;
+}
+
+[class*='col-'] {
+  margin: 0 1%;
+  padding: 1%;
+  flex-basis: 96%;
+}
+
+.col-1-2,
+.col-1-4 {
+  background-color: lavender;
+}
+.col-2 {
+  background-color: lemonchiffon;
+}
+.col-3 {
+  background-color: lightblue;
+}
+
+.col-4 {
+  background-color: lavenderblush;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .col-1-2,
+  .col-2 {
+    flex-basis: 46%;
+  }
+
+  .col-1-4,
+  .col-2-1 .col-3,
+  .col-4 {
+    flex-basis: 96%;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .col-1-2,
+  .col-1-4 {
+    flex-basis: 21%;
+  }
+
+  .col-2,
+  .col-2-1 {
+    flex-basis: 46%;
+  }
+  .col-3 {
+    flex-basis: 71%;
+  }
+  .col-4 {
+    flex-basis: 96%;
+  }
+}

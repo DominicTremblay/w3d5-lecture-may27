@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <style>
+    * {
+      border: 1px dashed fuchsia;
+    }
+
+    body {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: lightgreen;
+      flex-grow: 1;
+    }
+
+    div.container {
+      display: flex;
+      flex-grow: 2;
+      /* justify-content: space-between; */
+    }
+
+    main {
+      flex-basis: 33%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: aquamarine;
+    }
+    aside {
+      flex-basis: 66%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: lightcoral;
+    }
+
+    aside h2 {
+      justify-content: center;
+      align-items: center;
+    }
+
+    main h2 {
+      justify-content: center;
+      align-items: center;
+    }
+  </style>
+
+  <head>
+    <meta charset="utf-8" />
+    <title>Layout One</title>
+  </head>
+
+  <body>
+    <header>
+      <h2>A</h2>
+    </header>
+    <div class="container">
+      <aside>
+        <h2>B</h2>
+      </aside>
+      <main>
+        <h2>C</h2>
+      </main>
+    </div>
+  </body>
+</html>
